@@ -30,28 +30,33 @@ public:
 
     //// STUDENT CODE
     ////
-    ChatBot(ChatBot &source); // copy constructor 
+    ChatBot(const ChatBot &source); // copy constructor 
     ChatBot(ChatBot &&source); // move constructor
-    ChatBot &operator = (ChatBot &source) { // copy assignment operator overload
-        if (this == &source)
-            return *this;
+    // ChatBot &operator = (ChatBot &source) { // copy assignment operator overload
+    //     if (this == &source)
+    //         return *this;
 
-        _image = source._image;
-        std::cout << "ChatBot Copy Assignment Operator" << std::endl;
+    //     _image = source._image;
+    //     std::cout << "ChatBot Copy Assignment Operator" << std::endl;
 
-        return *this;
-    }
-    ChatBot &operator = (ChatBot &&source) { // move assignment operator overload
-        if (this == &source) 
-            return *this;
+    //     return *this;
+    // }
+    // ChatBot &operator = (ChatBot &&source) { // move assignment operator overload
+    //     if (this == &source) 
+    //         return *this;
 
-        delete _image;
+    //     delete _image;
         
-        _image = source._image;
-        source._image = NULL;
+    //     _image = source._image;
+    //     source._image = NULL;
 
-        return *this;
-    }
+    //     return *this;
+    // }
+
+
+    ChatBot &operator = (const ChatBot &source);
+
+    ChatBot &operator = (ChatBot &&source);
     ////
     //// EOF STUDENT CODE
 
