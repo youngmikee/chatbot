@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include "chatgui.h"
+#include <memory>
 
 // forward declarations
 class ChatBot;
@@ -19,7 +20,7 @@ private:
     // data handles (owned)
     std::vector<GraphNode *> _nodes;
     std::vector<GraphEdge *> _edges;
-
+ 
     ////
     //// EOF STUDENT CODE
 
