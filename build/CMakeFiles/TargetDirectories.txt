@@ -1,3 +1,0 @@
-/Users/playground/Documents/Learning/chatbot/build/CMakeFiles/rebuild_cache.dir
-/Users/playground/Documents/Learning/chatbot/build/CMakeFiles/edit_cache.dir
-/Users/playground/Documents/Learning/chatbot/build/CMakeFiles/membot.dir
