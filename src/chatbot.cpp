@@ -86,6 +86,7 @@ ChatBot &ChatBot::operator = (const ChatBot &source) { // copy assignment operat
 }
 
 ChatBot &ChatBot::operator = (ChatBot &&source) { // move assignment operator overload
+    std::cout << "ChatBot Move Assignment Operator" << std::endl;
     if (this == &source) 
         return *this;
 
